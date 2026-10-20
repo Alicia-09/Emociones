@@ -12,14 +12,14 @@ from config import (
     MONGO_ATLAS_URI
 )
 
-class HoneyPuffDB:
+class EmocionesDB:
 
     def __init__(self):
         try:
             self.cliente = MongoClient(MONGO_ATLAS_URI, serverSelectionTimeoutMS=5000)
             self.cliente.admin.command("ping")
 
-            self.db = self.cliente["HoneyPuff"]
+            self.db = self.cliente["Emociones"]
             self.usuarios = self.db["usuarios"]
             self.mascotas = self.db["mascotas"]
 
