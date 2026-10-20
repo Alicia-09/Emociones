@@ -1,0 +1,42 @@
+
+/* Quitar el fondo y los bordes del botón */
+.boton-imagen {
+    background: none;
+    border: none;
+    padding: 0;
+    cursor: pointer;
+}
+
+/* Tamaño y movimiento de la imagen */
+.imagen-emocion {
+    width: 190px;
+    height: 190px;
+    object-fit: contain;
+    transition: transform 0.25s ease;
+}
+
+/* La imagen se levanta al pasar el cursor */
+.boton-imagen:hover .imagen-emocion {
+    transform: translateY(-8px);
+}
+
+/* Botón de juegos */
+.boton-juegos {
+    background-color: #FF904D;
+    color: white;
+    border: none;
+    transition: all 0.3s ease;
+}
+
+/* Animación al pasar el cursor */
+.boton-juegos:hover {
+    background-color: #FFAD75;
+    color: white;
+    transform: translateY(-5px) scale(1.05);
+}
+
+/* Efecto al presionar */
+.boton-juegos:active {
+    transform: translateY(1px) scale(0.98);
+}
+

@@ -1,0 +1,297 @@
+<!DOCTYPE html>
+{% extends 'base.html' %}
+
+{% block pagina %}
+Conociendo mis emociones
+{% endblock %}
+
+{% block titulo %}
+Conociendo mis emociones
+{% endblock %}
+
+{% block menu %}
+
+<div class="seccion-clara">
+    <div class="container py-5">
+        <div class="row align-items-center">
+
+            <div class="col-md-6">
+                <h1 class="titulo-naranja fw-bold">
+                    Bienvenido a Conociendo tus emociones
+                </h1>
+
+                <p class="texto-secundario mb-4">
+                    Aqui puedes hablar de como te sientes, tenemos juegos y actividades que pueden ayudarte
+            </div>
+
+            <div class="col-md-6 text-center mt-4 mt-md-0">
+                <img src="{{ url_for('static', filename='img/emociones.png') }}" class="img-fluid"
+                    alt="app en teléfono">
+            </div>
+        </div>
+    </div>
+</div>
+
+
+<section class="container py-5" id="emociones">
+
+    <h2 class="text-center mb-3">
+        Conoce tus emociones
+    </h2>
+
+    <div class="row g-4">
+
+        <div class="col-12 col-sm-6 col-lg-2">
+            <div class="emocion-item text-center p-3">
+                <!-- Nombre de la emoción -->
+                <h3 class="nombre-emocion mb-3">
+                    Alegría
+                </h3>
+
+                <!-- Imagen que funciona como botón -->
+                <button class="boton-imagen" type="button" data-bs-toggle="collapse" data-bs-target="#info-alegria"
+                    aria-expanded="false" aria-controls="info-alegria">
+
+                    <img src="{{ url_for('static', filename='img/emopjis.png') }}" alt="Imagen de la alegría"
+                        class="img-fluid imagen-emocion">
+                </button>
+
+                <!-- Información desplegable -->
+                <div class="collapse mt-3" id="info-alegria">
+
+                    <div class="bg-warning-subtle p-3 rounded-4 text-start">
+
+                        <h4 class="h5 mb-3">Alegría 😄</h4>
+
+                        <p>
+                            Es una emoción que sentimos cuando algo
+                            nos hace felices.
+                        </p>
+
+                        <p class="mb-0">
+                            <strong>¿Cuándo aparece?</strong>
+                            Cuando jugamos, reímos o estamos con
+                            personas que queremos.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+
+
+        <!-- TRISTEZA -->
+        <div class="col-12 col-sm-6 col-lg-2">
+            <div class="emocion-item text-center p-3">
+                <!-- Nombre de la emoción -->
+                <h3 class="nombre-emocion mb-3">
+                    Tristeza
+                </h3>
+
+                <!-- Imagen que funciona como botón -->
+                <button class="boton-imagen" type="button" data-bs-toggle="collapse" data-bs-target="#info-tristeza"
+                    aria-expanded="false" aria-controls="info-tristeza">
+
+                    <img src="{{ url_for('static', filename='img/emopjis.png') }}" alt="Imagen de la alegría"
+                        class="img-fluid imagen-emocion">
+                </button>
+
+                <!-- Información desplegable -->
+                <div class="collapse mt-3" id="info-tristeza">
+
+                    <div class="bg-warning-subtle p-3 rounded-4 text-start">
+
+                        <h4 class="h5 mb-3">Tristeza</h4>
+
+                        <p>
+                            Es una emoción que sentimos cuando algo
+                            nos hace felices.
+                        </p>
+
+                        <p class="mb-0">
+                            <strong>¿Cuándo aparece?</strong>
+                            Cuando jugamos, reímos o estamos con
+                            personas que queremos.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <!-- ENOJO -->
+        <div class="col-12 col-sm-6 col-lg-2">
+            <div class="emocion-item text-center p-3">
+                <!-- Nombre de la emoción -->
+                <h3 class="nombre-emocion mb-3">
+                    Enojo
+                </h3>
+
+                <!-- Imagen que funciona como botón -->
+                <button class="boton-imagen" type="button" data-bs-toggle="collapse" data-bs-target="#info-enojo"
+                    aria-expanded="false" aria-controls="info-enojo">
+
+                    <img src="{{ url_for('static', filename='img/emopjis.png') }}" alt="Imagen de la alegría"
+                        class="img-fluid imagen-emocion">
+                </button>
+
+                <!-- Información desplegable -->
+                <div class="collapse mt-3" id="info-enojo">
+
+                    <div class="bg-warning-subtle p-3 rounded-4 text-start">
+
+                        <h4 class="h5 mb-3">Enojo</h4>
+
+                        <p>
+                            Es una emoción que sentimos cuando algo
+                            nos hace felices.
+                        </p>
+
+                        <p class="mb-0">
+                            <strong>¿Cuándo aparece?</strong>
+                            Cuando jugamos, reímos o estamos con
+                            personas que queremos.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-2">
+            <div class="emocion-item text-center p-3">
+                <!-- Nombre de la emoción -->
+                <h3 class="nombre-emocion mb-3">
+                    Alegría
+                </h3>
+
+                <!-- Imagen que funciona como botón -->
+                <button class="boton-imagen" type="button" data-bs-toggle="collapse" data-bs-target="#info-alegria"
+                    aria-expanded="false" aria-controls="info-alegria">
+
+                    <img src="{{ url_for('static', filename='img/emopjis.png') }}" alt="Imagen de la alegría"
+                        class="img-fluid imagen-emocion">
+                </button>
+
+                <!-- Información desplegable -->
+                <div class="collapse mt-3" id="info-alegria">
+
+                    <div class="bg-warning-subtle p-3 rounded-4 text-start">
+
+                        <h4 class="h5 mb-3">Alegría 😄</h4>
+
+                        <p>
+                            Es una emoción que sentimos cuando algo
+                            nos hace felices.
+                        </p>
+
+                        <p class="mb-0">
+                            <strong>¿Cuándo aparece?</strong>
+                            Cuando jugamos, reímos o estamos con
+                            personas que queremos.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-2">
+            <div class="emocion-item text-center p-3">
+                <!-- Nombre de la emoción -->
+                <h3 class="nombre-emocion mb-3">
+                    Alegría
+                </h3>
+
+                <!-- Imagen que funciona como botón -->
+                <button class="boton-imagen" type="button" data-bs-toggle="collapse" data-bs-target="#info-alegria"
+                    aria-expanded="false" aria-controls="info-alegria">
+
+                    <img src="{{ url_for('static', filename='img/emopjis.png') }}" alt="Imagen de la alegría"
+                        class="img-fluid imagen-emocion">
+                </button>
+
+                <!-- Información desplegable -->
+                <div class="collapse mt-3" id="info-alegria">
+
+                    <div class="bg-warning-subtle p-3 rounded-4 text-start">
+
+                        <h4 class="h5 mb-3">Alegría 😄</h4>
+
+                        <p>
+                            Es una emoción que sentimos cuando algo
+                            nos hace felices.
+                        </p>
+
+                        <p class="mb-0">
+                            <strong>¿Cuándo aparece?</strong>
+                            Cuando jugamos, reímos o estamos con
+                            personas que queremos.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="col-12 col-sm-6 col-lg-2">
+            <div class="emocion-item text-center p-3">
+                <!-- Nombre de la emoción -->
+                <h3 class="nombre-emocion mb-3">
+                    Alegría
+                </h3>
+
+                <!-- Imagen que funciona como botón -->
+                <button class="boton-imagen" type="button" data-bs-toggle="collapse" data-bs-target="#info-alegria"
+                    aria-expanded="false" aria-controls="info-alegria">
+
+                    <img src="{{ url_for('static', filename='img/emopjis.png') }}" alt="Imagen de la alegría"
+                        class="img-fluid imagen-emocion">
+                </button>
+
+                <!-- Información desplegable -->
+                <div class="collapse mt-3" id="info-alegria">
+
+                    <div class="bg-warning-subtle p-3 rounded-4 text-start">
+
+                        <h4 class="h5 mb-3">Alegría 😄</h4>
+
+                        <p>
+                            Es una emoción que sentimos cuando algo
+                            nos hace felices.
+                        </p>
+
+                        <p class="mb-0">
+                            <strong>¿Cuándo aparece?</strong>
+                            Cuando jugamos, reímos o estamos con
+                            personas que queremos.
+                        </p>
+
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+
+        <div class="text-center mt-5 mb-4">
+            <a href="#juegos" class="btn btn-lg rounded-pill px-5 py-3 fw-bold boton-juegos shadow">
+                Juegos
+            </a>
+        </div>
+
+    </div>
+</section>
+
+{% endblock menu %}
